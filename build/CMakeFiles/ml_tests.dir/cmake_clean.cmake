@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ml_tests.dir/src/main.c.o.d"
   "CMakeFiles/ml_tests.dir/src/tensor.c.o"
   "CMakeFiles/ml_tests.dir/src/tensor.c.o.d"
+  "CMakeFiles/ml_tests.dir/tests/test_lr.c.o"
+  "CMakeFiles/ml_tests.dir/tests/test_lr.c.o.d"
   "ml_tests"
   "ml_tests.pdb"
 )

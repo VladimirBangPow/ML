@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/hassanamad/Projects/ML/src/lr.c" "CMakeFiles/ml_tests.dir/src/lr.c.o" "gcc" "CMakeFiles/ml_tests.dir/src/lr.c.o.d"
   "/Users/hassanamad/Projects/ML/src/main.c" "CMakeFiles/ml_tests.dir/src/main.c.o" "gcc" "CMakeFiles/ml_tests.dir/src/main.c.o.d"
   "/Users/hassanamad/Projects/ML/src/tensor.c" "CMakeFiles/ml_tests.dir/src/tensor.c.o" "gcc" "CMakeFiles/ml_tests.dir/src/tensor.c.o.d"
+  "/Users/hassanamad/Projects/ML/tests/test_lr.c" "CMakeFiles/ml_tests.dir/tests/test_lr.c.o" "gcc" "CMakeFiles/ml_tests.dir/tests/test_lr.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

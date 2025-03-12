@@ -1,0 +1,591 @@
+Start testing: Mar 12 18:48 EDT
+----------------------------------------------------------
+1/3 Testing: ml_test_suite
+1/3 Test: ml_test_suite
+Command: "/Users/hassanamad/Projects/ML/build/ml_tests"
+Directory: /Users/hassanamad/Projects/ML/build
+"ml_test_suite" start time: Mar 12 18:48 EDT
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.12 sec
+----------------------------------------------------------
+Test Passed.
+"ml_test_suite" end time: Mar 12 18:48 EDT
+"ml_test_suite" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: AllTests
+2/3 Test: AllTests
+Command: "/Users/hassanamad/Projects/ML/build/DataFrame_build/DataStructures_build/tests/test_runner"
+Directory: /Users/hassanamad/Projects/ML/build/DataFrame_build/DataStructures_build/tests
+"AllTests" start time: Mar 12 18:48 EDT
+Output:
+----------------------------------------------------------
+=== BEGIN LINKED LIST TESTS (ASSERTION-BASED) ===
+
+Running test_createNode...
+test_createNode PASSED.
+Running test_insertAtBeginning...
+20 -> 10 -> NULL
+test_insertAtBeginning PASSED.
+Running test_insertAtEnd...
+test_insertAtEnd PASSED.
+Running test_removeAtBeginning...
+test_removeAtBeginning PASSED.
+Running test_insertAtPosition...
+test_insertAtPosition PASSED.
+Running test_removeAtPosition...
+test_removeAtPosition PASSED.
+Running test_search...
+test_search PASSED.
+Running test_sortList...
+test_sortList PASSED.
+Running test_freeList...
+test_freeList PASSED.
+
+=== ALL TESTS PASSED SUCCESSFULLY ===
+=== BEGIN STACK TESTS ===
+
+=== testStackInts ===
+|==|
+|30|
+|==|
+|==|
+|20|
+|==|
+|==|
+|10|
+|==|
+testStackInts PASSED.
+
+=== testStackStrings ===
+|===============|
+|this is a lo...|
+|===============|
+|===============|
+|world          |
+|===============|
+testStackStrings PASSED.
+
+=== testStackStructs ===
+|===================|
+|id=3,amt=42.0,Gamma|
+|===================|
+|===================|
+|id=2,amt=3.1,Beta  |
+|===================|
+|===================|
+|id=1,amt=10.0,Alpha|
+|===================|
+testStackStructs PASSED.
+
+=== ALL STACK TESTS PASSED SUCCESSFULLY ===
+=== TEST DOUBLY LINKED LIST ===
+=== testIntegerOperations ===
+Current list: 20 -> 10 -> 30 -> NULL
+After removing front (20): 10 -> 30 -> NULL
+After removing back (30): 10 -> NULL
+[OK] testIntegerOperations passed.
+
+=== testStringOperations ===
+Current list: "Hello" -> "World" -> "Test123" -> NULL
+After removing front ("Hello"): "World" -> "Test123" -> NULL
+After removing back ("Test123"): "World" -> NULL
+[OK] testStringOperations passed.
+
+=== testPersonOperations ===
+Current list: {name: Bob, age: 40} -> {name: Alice, age: 30} -> NULL
+After removing front (Bob): {name: Alice, age: 30} -> NULL
+[OK] testPersonOperations passed.
+
+=== testMixedOperations ===
+Current list: 999 -> "Mixed" -> {name: Eve, age: 25} -> NULL
+After removing front (999): "Mixed" -> {name: Eve, age: 25} -> NULL
+After removing front ("Mixed"): {name: Eve, age: 25} -> NULL
+[OK] testMixedOperations passed.
+
+All tests passed successfully!
+=== Testing Queue ===
+Queue after enqueuing 3 integers:
+Queue (front -> back): 10 -> 20 -> 30 -> NULL
+Dequeued value: 10
+Queue (front -> back): 20 -> 30 -> NULL
+Is queue empty? No
+Queue after clearing:
+Queue (front -> back): NULL
+Is queue empty? Yes
+=== Queue Tests Complete ===
+
+
+--- testEmptyDeque ---
+testEmptyDeque passed!
+
+--- testPushFrontPopFront ---
+40 -> 30 -> 20 -> 10 -> NULL
+testPushFrontPopFront passed!
+
+--- testPushBackPopBack ---
+100 -> 200 -> 300 -> NULL
+testPushBackPopBack passed!
+
+--- testMixedOperations ---
+Deque after some pushes: 22 -> 11 -> 33 -> 44 -> NULL
+Deque after pops and another push: 11 -> 33 -> 55 -> NULL
+testMixedOperations passed!
+
+--- testEdgeCases ---
+999 -> NULL
+testEdgeCases passed!
+
+All Deque tests passed successfully!
+=== testCircularListInt ===
+List after inserting 3 ints: 200 -> 100 -> 300 ->  (circular back to head)
+After removing front (200): 100 -> 300 ->  (circular back to head)
+After removing back (300): 100 ->  (circular back to head)
+[OK] testCircularListInt passed.
+
+=== testCircularListString ===
+List after inserting 3 strings: "Alpha" -> "Beta" -> "Gamma" ->  (circular back to head)
+After removing front ("Alpha"): "Beta" -> "Gamma" ->  (circular back to head)
+After removing back ("Gamma"): "Beta" ->  (circular back to head)
+[OK] testCircularListString passed.
+
+=== testCircularListPerson ===
+List after inserting 2 Persons: {name: Alice, age: 30} -> {name: Bob, age: 40} ->  (circular back to head)
+After removing front (Alice): {name: Bob, age: 40} ->  (circular back to head)
+[OK] testCircularListPerson passed.
+
+=== testCircularListMixed ===
+List after inserting 3 mixed data: 999 -> "Omega" -> {name: Zara, age: 22} ->  (circular back to head)
+After removing front (999): "Omega" -> {name: Zara, age: 22} ->  (circular back to head)
+After removing front ("Omega"): {name: Zara, age: 22} ->  (circular back to head)
+[OK] testCircularListMixed passed.
+
+All circular list tests completed!
+
+-- testDynamicArrayWithInts --
+Array contents (intPrint): [ 10, 20, 30 ]
+testDynamicArrayWithInts passed!
+
+-- testDynamicArrayWithStrings --
+Array contents (genericPrint): [ "Hello", "World!", "A long string maybe?" ]
+testDynamicArrayWithStrings passed!
+
+-- testDynamicArrayWithStructs --
+Array contents (genericPrint): [ 0x01000000000020410000A041, 0x020000000000B0C0C3F54840 ]
+testDynamicArrayWithStructs passed!
+
+-- testDynamicArrayResizing --
+testDynamicArrayResizing passed!
+
+-- testDynamicArrayOfDynamicArrays --
+testDynamicArrayOfDynamicArrays passed!
+
+All DynamicArray tests passed successfully!
+
+-- test_c_strlen --
+test_c_strlen passed!
+
+-- test_c_strcpy --
+test_c_strcpy passed!
+
+-- test_c_strncpy --
+He
+test_c_strncpy passed!
+
+-- test_c_strcmp --
+test_c_strcmp passed!
+
+-- test_c_strncmp --
+test_c_strncmp passed!
+
+-- test_c_strcat --
+test_c_strcat passed!
+
+-- test_c_strncat --
+test_c_strncat passed!
+
+-- test_c_strchr --
+test_c_strchr passed!
+
+--- test_c_strrchr ---
+test_c_strrchr passed!
+
+-- test_c_strstr --
+test_c_strstr passed!
+
+-- test_c_strtok --
+test_c_strtok passed!
+
+All string library tests passed successfully!
+Starting SkipList tests...
+Test 1: Integer skip list...
+Integer skip list test passed!
+Test 2: String skip list...
+String skip list test passed!
+Test 3: Struct skip list (MyPoint)...
+Struct skip list test passed!
+Stress test with 1000000 items PASSED.
+All SkipList tests passed!
+=====Hash Table Testing=====
+[Test] Insert key-value pairs
+[Test] Search
+[Test] Remove some keys
+[Test] Stress insert to trigger resize
+=====All hash table tests passed!=====
+Beginning BinaryTree tests...
+ - Basic insertion tests passed.
+ - Find tests passed.
+ - Stress test passed.
+All BinaryTree tests PASSED successfully.
+Running Generic Binary Search Tree Tests...
+
+  [INT] Testing BST with integers...
+  [CHAR] Testing BST with characters...
+  [STRING] Testing BST with strings...
+  [STRUCT] Testing BST with Person struct...
+  [STRESS] Running large-scale/stress test on BST with int data...
+  [STRESS] Stress test completed successfully.
+
+All BST tests for multiple data types passed!
+Running AVL Tree tests...
+[test_integers_basic] Passed.
+[test_doubles_basic] Passed.
+[test_strings_basic] Passed.
+[test_stress_int] Passed (N = 10000).
+[test_invariants_stress] Running...
+[test_invariants_stress] Passed.
+All AVL Tree tests passed.
+Running all RBT Tests:
+Running integer test...
+Integer test PASSED.
+Running double test...
+Double test PASSED.
+Running string test...
+String test PASSED.
+Running struct (Person) test...
+Struct (Person) test PASSED.
+Running stress test with random integers...
+Tree size after random inserts: 47502
+Tree size after random deletes: 47414
+Stress test PASSED.
+All RBT tests PASSED.
+Running int splay tree tests...
+  [OK] int tests passed.
+
+Running float splay tree tests...
+  [OK] float tests passed.
+
+Running string splay tree tests...
+  [OK] string tests passed.
+
+Running struct splay tree tests...
+  [OK] struct tests passed.
+
+Running stress test...
+  [OK] stress test passed.
+
+All tests passed!
+Starting Treap tests...
+All Treap tests passed successfully.
+All B-Tree tests passed successfully!
+== B+ Tree Test Suite ==
+[PASS] Integer test: passed all checks.
+[PASS] Float test: passed all checks.
+[PASS] String test: passed all checks.
+[PASS] Person test: passed all checks.
+Underflow at level 7
+Subtree invalid at level 6
+Subtree invalid at level 5
+Subtree invalid at level 4
+Subtree invalid at level 3
+Subtree invalid at level 2
+Subtree invalid at level 1
+Subtree invalid at level 0
+[FAIL] Stress test: invalid B+ tree during deletion sequence.
+== Test Suite Finished ==
+=== Running Priority Queue Tests ===
+
+=== testIntegers (isMinHeap=true) ===
+testIntegers (isMinHeap=true) passed!
+
+=== testIntegers (isMinHeap=false) ===
+testIntegers (isMinHeap=false) passed!
+
+=== testFloats (isMinHeap=true) ===
+testFloats (isMinHeap=true) passed!
+
+=== testFloats (isMinHeap=false) ===
+testFloats (isMinHeap=false) passed!
+
+=== testStrings (isMinHeap=true) ===
+testStrings (isMinHeap=true) passed!
+
+=== testStrings (isMinHeap=false) ===
+testStrings (isMinHeap=false) passed!
+
+=== testStress (isMinHeap=true) ===
+testStress (isMinHeap=true) passed!
+
+=== testStress (isMinHeap=false) ===
+testStress (isMinHeap=false) passed!
+
+=== All tests passed! ===
+=== Running Extended Unicode Tests ===
+ - Single code point encode/decode tests passed.
+ - Known string decode checks passed.
+ - Invalid sequence checks passed.
+ - utf8_char_offset test passed.
+ - utf8_substr test passed.
+ - utf8_find_codepoint test passed.
+ - utf8_casefold_codepoint + utf8_strtolower tests passed.
+
+=== Unicode Stress Test ===
+[=                                                 ]   3% (256/8192)[===                                               ]   6% (512/8192)[====                                              ]   9% (768/8192)[======                                            ]  12% (1024/8192)[=======                                           ]  15% (1280/8192)[=========                                         ]  18% (1536/8192)[==========                                        ]  21% (1792/8192)[============                                      ]  25% (2048/8192)[==============                                    ]  28% (2304/8192)[===============                                   ]  31% (2560/8192)[=================                                 ]  34% (2816/8192)[==================                                ]  37% (3072/8192)[====================                              ]  40% (3328/8192)[=====================                             ]  43% (3584/8192)[=======================                           ]  46% (3840/8192)[=========================                         ]  50% (4096/8192)[==========================                        ]  53% (4352/8192)[============================                      ]  56% (4608/8192)[=============================                     ]  59% (4864/8192)[===============================                   ]  62% (5120/8192)[================================                  ]  65% (5376/8192)[==================================                ]  68% (5632/8192)[===================================               ]  71% (5888/8192)[=====================================             ]  75% (6144/8192)[=======================================           ]  78% (6400/8192)[========================================          ]  81% (6656/8192)[==========================================        ]  84% (6912/8192)[===========================================       ]  87% (7168/8192)[=============================================     ]  90% (7424/8192)[==============================================    ]  93% (7680/8192)[================================================  ]  96% (7936/8192)[==================================================] 100% (8192/8192)Assertion failed: (fp && "Could not open words.csv. Check path or file location!"), function test_stress_trie, file test_trie.c, line 205.
+
+[STRESS TEST] Completed. Encoded/decoded 8192 code points up to 0x2000.
+
+All Unicode tests passed!
+=== Running Basic Tests ===
+
+=== Running Stress Test ===
+Current working dir: /Users/hassanamad/Projects/ML/build/DataFrame_build/DataStructures_build/tests
+<end of output>
+Test time =  40.45 sec
+----------------------------------------------------------
+Test Failed.
+"AllTests" end time: Mar 12 18:49 EDT
+"AllTests" time elapsed: 00:00:40
+----------------------------------------------------------
+
+3/3 Testing: AllTests
+3/3 Test: AllTests
+Command: "/Users/hassanamad/Projects/ML/build/DataFrame_build/tests/df_test_runner"
+Directory: /Users/hassanamad/Projects/ML/build/DataFrame_build/tests
+"AllTests" start time: Mar 12 18:49 EDT
+Output:
+----------------------------------------------------------
+dfGetRow_impl: rowIndex=99 out of range (max 3)
+Plot saved to plot_line_test.png
+Plot saved to plot_scatter_test.png
+2025-03-12 18:49:16.355 Python[85618:4255322] +[IMKClient subclass]: chose IMKClient_Modern
+2025-03-12 18:49:16.355 Python[85618:4255322] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+Plot saved to plot_hloc_test.png
+dfInsert_impl: newCol row mismatch, ignoring.
+Running DataFrame core tests...
+ - testDifferentColumnTypes passed.
+ - testAddRow passed.
+ - testGetRow passed.
+All DataFrame core tests passed successfully!
+Running DataFrame date tests...
+ - dfConvertToDatetime_impl test passed.
+ - datetimeToString test passed.
+ - dfDatetimeAdd_impl test passed.
+ - dfDatetimeDiff_impl test (ms) passed.
+ - dfDatetimeFilter_impl test passed.
+ - msVal=1678838400000, secVal=1678838400
+ - dfDatetimeTruncate_impl test passed.
+ - dfDatetimeExtract_impl test passed.
+ - dfDatetimeGroupBy_impl test passed.
+Running testDatetimeRound_impl...
+ - dfDatetimeRound_impl test passed.
+Running testDatetimeBetween_impl...
+   BetweenTest    
+0  1678871696000  
+1  1678924800000  
+
+[2 rows x 1 columns]
+ - dfDatetimeBetween_impl test passed.
+Running testDatetimeRebase_impl...
+ - dfDatetimeRebase_impl test passed.
+Running testDatetimeClamp_impl...
+ - dfDatetimeClamp_impl test passed.
+All dataframe_date tests passed successfully!
+Running testDfSum...
+testDfSum passed.
+Running testDfMean...
+testDfMean passed.
+Running testDfMin...
+testDfMin passed.
+Running testDfMax...
+testDfMax passed.
+Running testDfCount...
+testDfCount passed.
+Running testDfMedian...
+testDfMedian passed.
+Running testDfMode...
+testDfMode passed.
+Running testDfVar...
+testDfVar passed.
+Running testDfStd...
+testDfStd passed.
+Running testDfRange...
+testDfRange passed.
+Running testDfQuantile...
+testDfQuantile passed.
+Running testDfIQR...
+testDfIQR passed.
+Running testDfNullCount...
+testDfNullCount passed.
+Running testDfUniqueCount...
+testDfUniqueCount passed.
+Running testDfProduct...
+testDfProduct passed.
+Running testDfNthLargest...
+testDfNthLargest passed.
+Running testDfNthSmallest...
+testDfNthSmallest passed.
+Running testDfSkewness...
+testDfSkewness passed.
+Running testDfKurtosis...
+testDfKurtosis passed.
+Running testDfCovariance...
+testDfCovariance passed.
+Running testDfCorrelation...
+testDfCorrelation passed.
+Running testDfUniqueValues...
+testDfUniqueValues passed.
+Running testDfValueCounts...
+testDfValueCounts passed.
+Running testDfCumulativeSum...
+testDfCumulativeSum passed.
+Running testDfCumulativeProduct...
+testDfCumulativeProduct passed.
+Running testDfCumulativeMax...
+testDfCumulativeMax passed.
+Running testDfCumulativeMin...
+testDfCumulativeMin passed.
+Running testDfGroupBy...
+testDfGroupBy passed.
+All aggregator tests passed successfully!
+Running DataFrame combine tests...
+Testing dfConcat_impl...
+ - dfConcat_impl test passed.
+Testing dfMerge_impl (inner only)...
+ - dfMerge_impl test (inner) passed.
+Testing dfJoin_impl...
+ - dfJoin_impl tests (INNER,LEFT,RIGHT) passed.
+Testing dfUnion_impl...
+ - dfUnion_impl test passed.
+Testing dfIntersection_impl...
+ - dfIntersection_impl test passed.
+Testing dfDifference_impl...
+ - dfDifference_impl test passed.
+Testing dfSemiJoin_impl...
+ - dfSemiJoin_impl test passed.
+Testing dfAntiJoin_impl...
+ - dfAntiJoin_impl test passed.
+Testing dfCrossJoin_impl...
+ - dfCrossJoin_impl test passed.
+All DataFrame combine tests passed successfully!
+Running DataFrame Query Tests (split) ...
+testHead passed.
+testTail passed.
+testDescribe passed.
+testSlice passed.
+testSample passed.
+testSelectColumns passed.
+testDropColumns passed.
+testRenameColumns passed.
+testFilter passed.
+testDropNA passed.
+testSort passed.
+testDropDuplicates passed.
+testUnique passed.
+testTranspose passed.
+testIndexOf passed.
+testApply passed.
+testWhere passed.
+testExplode passed.
+All DataFrame query tests passed successfully!
+Running DataFrame print tests...
+   IntCol  NameCol  
+0      10  Alice    
+1      20  Bob      
+2      30  Charlie  
+3      40  Diana    
+4      50  Ethan    
+
+[5 rows x 2 columns]
+ - Basic test passed.
+Empty DataFrame
+Columns: 0
+Index: 0 entries
+Empty DataFrame
+Columns: 2
+Index: 0 entries
+ - Edge cases (empty DF, 0-row DF) passed.
+       LargeInt1  LargeInt2  
+    0          0          0  
+    1          1          2  
+    2          2          4  
+    3          3          6  
+    4          4          8  
+       ...        ...        
+19995      19995      39990  
+19996      19996      39992  
+19997      19997      39994  
+19998      19998      39996  
+19999      19999      39998  
+
+[20000 rows x 2 columns]
+ - Stress test (20k rows) passed.
+All dataframe_print tests passed successfully!
+Running DataFrame plot tests...
+ - Line plot test passed (no crash).
+ - Scatter plot test passed (no crash).
+ - HLOC candlestick plot test passed (no crash).
+All dataframe_plot tests passed (assuming system calls did not fail)!
+Running DataFrame indexing tests...
+Running testDfAt...
+testDfAt passed.
+Running testDfIat...
+testDfIat passed.
+Running testDfLoc...
+testDfLoc passed.
+Running testDfIloc...
+testDfIloc passed.
+Running testDfDrop...
+testDfDrop passed.
+Running testDfPop...
+testDfPop passed.
+Running testDfInsert...
+testDfInsert passed.
+Running testDfIndex...
+testDfIndex passed.
+Running testDfColumns...
+testDfColumns passed.
+Running testSetValue...
+testSetValue passed.
+Running testSetRow...
+testSetRow passed.
+Running testSetColumn...
+testSetColumn passed.
+Running testRenameColumn...
+testRenameColumn passed.
+Running testReindex...
+testReindex passed.
+Running testTake...
+testTake passed.
+Running testReorderColumns...
+testReorderColumns passed.
+All DataFrame indexing tests passed successfully!
+Running DataFrame reshape tests...
+ - dfPivot, dfMelt tests passed.
+All dataframe_reshape tests passed successfully!
+Running DataFrame IO tests...
+ - Small CSV test passed.
+ - Empty CSV test passed.
+ - Single-column CSV test passed.
+ - Large CSV stress test passed.
+All dataframe_io tests passed successfully!
+<end of output>
+Test time =   6.58 sec
+----------------------------------------------------------
+Test Passed.
+"AllTests" end time: Mar 12 18:49 EDT
+"AllTests" time elapsed: 00:00:06
+----------------------------------------------------------
+
+End testing: Mar 12 18:49 EDT

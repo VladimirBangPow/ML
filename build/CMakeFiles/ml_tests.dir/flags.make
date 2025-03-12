@@ -4,7 +4,7 @@
 # compile C with /Library/Developer/CommandLineTools/usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/hassanamad/Projects/ML/include -I/Users/hassanamad/Projects/DataFrame/include -I/Users/hassanamad/Projects/DataStructures/include
+C_INCLUDES = -I/Users/hassanamad/Projects/ML/tests/include -I/Users/hassanamad/Projects/ML/include -I/Users/hassanamad/Projects/DataFrame/include -I/Users/hassanamad/Projects/DataStructures/include
 
 C_FLAGSarm64 = -std=gnu11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -fsanitize=address -fno-omit-frame-pointer -g
 

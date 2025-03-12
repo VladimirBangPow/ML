@@ -672,6 +672,30 @@ src/tensor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ml_tests.dir/build.make CMakeFiles/ml_tests.dir/src/tensor.c.s
 .PHONY : src/tensor.c.s
 
+tests/test_lr.o: tests/test_lr.c.o
+.PHONY : tests/test_lr.o
+
+# target to build an object file
+tests/test_lr.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ml_tests.dir/build.make CMakeFiles/ml_tests.dir/tests/test_lr.c.o
+.PHONY : tests/test_lr.c.o
+
+tests/test_lr.i: tests/test_lr.c.i
+.PHONY : tests/test_lr.i
+
+# target to preprocess a source file
+tests/test_lr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ml_tests.dir/build.make CMakeFiles/ml_tests.dir/tests/test_lr.c.i
+.PHONY : tests/test_lr.c.i
+
+tests/test_lr.s: tests/test_lr.c.s
+.PHONY : tests/test_lr.s
+
+# target to generate assembly for a file
+tests/test_lr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ml_tests.dir/build.make CMakeFiles/ml_tests.dir/tests/test_lr.c.s
+.PHONY : tests/test_lr.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -727,6 +751,9 @@ help:
 	@echo "... src/tensor.o"
 	@echo "... src/tensor.i"
 	@echo "... src/tensor.s"
+	@echo "... tests/test_lr.o"
+	@echo "... tests/test_lr.i"
+	@echo "... tests/test_lr.s"
 .PHONY : help
 
 

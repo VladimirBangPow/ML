@@ -12,6 +12,7 @@ add_executable(ml_tests
     src/main.c
     src/tensor.c
     src/lr.c
+    tests/test_lr.c
     # any other .c files
 )
 
@@ -29,6 +30,7 @@ target_link_options(ml_tests PRIVATE
 
 target_include_directories(ml_tests
     PUBLIC
+    ${CMAKE_SOURCE_DIR}/tests/include
     ${CMAKE_SOURCE_DIR}/include
 )
 
